@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cosme Apolo">
+    <meta name="keywords" content="Moda Outfit Novedades Descuentos">
+    <meta name="description" content="Proyecto Zara">
+    <!-- Dowload BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <!-- Linkeando mi hoja de estilos estilos.css -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Dowload los íconos de BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Ícono de la página web -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.svg">
+    <!-- Dowload Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Belanosima&family=Lexend+Peta:wght@500&family=Oswald&family=PT+Serif&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Introduccion Bootstrap</title>
+</head>
+<body>
+    <!-- Título en la página utilizando clases de BOOTSTRAP -->
+    <h1 class="text-danger fs-3 text-center">Página Web con BOOTSTRAP</h1>
+    <!-- Crear el header del sitio  -->
+    <header class="container-fluid bg-primary d-flex justify-content-center p-3 mb-2">
+      <img src="imagenes/amd.svg" alt="logo" width="40px " height="40px">
+      <p class="text-dark fs-5">Boutique Zara</p>
+    </header>
+    <!-- Crear Sección principal -->
+    <div class="d-flex justify-content-center">
+      <section class="w-50 text-center pt-5">
+        <h1 class="p-3 fs-2 border-top border-3">Historia de la <span class="text-danger">Boutique Zara</span></h1>
+        <p class="p-3 fs-5">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur earum quidem, consectetur laboriosam praesentium iure, quo voluptatibus esse commodi facilis debitis temporibus dolore iusto voluptatum corrupti nisi! Vitae, iste commodi!
+        </p>
+      </section>
+    </div>
+    <!-- GRID -->
+    <section class="container-fluid">
+      <div class="row w-75" >
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-5 text-center">
+          <img src="imagenes/cinco.jpg" alt="cinco" width="180" height="160">
+          <div>
+            <h3 class="fs-3 mt-5 px-4 pb-1">Quito</h3>
+            <p class="px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium possimus accusantium quasi consequuntur in autem doloribus. Molestias pariatur laboriosam ab eius suscipit. Minus magni autem quisquam similique quaerat architecto?</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 d-flex justify-content-center fs-5 text-center">
+          <img src="imagenes/cinco.jpg" alt="cinco" width="180" height="160">
+          <div>
+            <h3 class="fs-3 mt-5 px-4 pb-1">Quito</h3>
+            <p class="px-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium possimus accusantium quasi consequuntur in autem doloribus. Molestias pariatur laboriosam ab eius suscipit. Minus magni autem quisquam similique quaerat architecto?</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- Incorporamos la nav bar de BOOTSTRAP -->
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-vimeo icono-principal"></i>
+            </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="registro.html">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galería</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- Incrustamos un carrusel de BOOTSTRAP -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="imagenes/imagen1.avif" class="d-block w-100" alt="vestidos">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/segunda.avif" class="d-block w-100" alt="abrigos">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/tercera.png" class="d-block w-100" alt="camisas">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/cuatro.webp" class="d-block w-100" alt="pantalones">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/cinco.jpg" class="d-block w-100" alt="jeans">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+      <!-- Incorporar una tarjeta BOOTSTRAP -->
+    <div class="d-flex justify-content-center">
+      <div class="card contenedor-tarjeta" style="width: 18rem;">
+        <img src="imagenes/segunda.avif" class="card-img-top" alt="vestimenta">
+        <div class="card-body">
+          <p class="card-text text-center text-primary">Visitanos por temporada tenemos grandes descuentos.</p>
+        </div>
+      </div>
+      <div class="card contenedor-tarjeta" style="width: 18rem;">
+        <img src="imagenes/tercera.png" class="card-img-top" alt="vestimenta">
+        <div class="card-body">
+          <p class="card-text text-center text-primary">Visitanos por temporada tenemos grandes descuentos.</p>
+        </div>
+      </div>
+      <div class="card contenedor-tarjeta" style="width: 18rem;">
+        <img src="imagenes/cuatro.webp" class="card-img-top" alt="vestimenta">
+        <div class="card-body">
+          <p class="card-text text-center text-primary">Visitanos por temporada tenemos grandes descuentos.</p>
+        </div>
+      </div>
+    </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
